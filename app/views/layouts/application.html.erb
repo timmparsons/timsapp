@@ -34,10 +34,9 @@
 				<nav class="nav nav-inline">
 				  <ul class="list-inline">
 				    <li><a href="#">Home</li>
-				    <li><%= link_to "About", '/static_pages/about' %><y
-				    /li>
-				    <li><%= link_to "Store", '/products/index.html.erb' %>Store</li>
-				    <li><%= link_to "Contact", '/static_pages/contact'</li>
+				    <li><%= link_to ("About", 'static_pages_about_path') %></li>
+				    <li><%= link_to ("Store", 'products_path') %></li>
+				    <li><%= link_to ("Contact", 'static_pages_contact_path') %></li>
 				  </ul>
 				 </nav><!-- end of nav-->
 			</div><!--end collapse navbar-->

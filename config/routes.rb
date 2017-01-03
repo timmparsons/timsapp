@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   
   root 'static_pages#landing_page'
 
-  resources :orders [:index, :show, :create, :destroy]
+  resources :orders [:index, :show, :new, :create, :destroy]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

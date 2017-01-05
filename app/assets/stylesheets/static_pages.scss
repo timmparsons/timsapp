@@ -1,9 +1,26 @@
-.navbar {
-color: white;
+body {
+background-color: #E5E4E2;
 }
 
-.nav li {
-  color: white;
+.navbar {
+background-color: white;
+border: none;
+}
+
+
+ul .list-inline {
+  margin-top: 0;
+  padding-top:15px;
+  text-transform: uppercase;
+}
+
+.navbar-brand a {
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.nav-inline li {
+    padding-bottom: 10px;
 }
 
 h1 {
@@ -13,9 +30,13 @@ text-align: center;
 }
 
 footer {
-	height: 50px;
-	background-color: gray;
-	color: white;
+  right: 0;
+  bottom: 0;
+  left: 0;	
+  height:50px;
+  width: 100%;
+  background-color: white;
+	color: gray;
 }
 
 

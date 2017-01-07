@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   get 'static_pages/contact'
 
   get 'static_pages/index'
+
+  get 'products/products'
   
-  root 'static_pages#landing_page'
+  root 'landing_page#index'
 
   resources :orders, only: [:index, :show, :create, :destroy]
 

@@ -2,11 +2,27 @@
 
 <h1>Products</h1>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <%= render @products %>
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+        <p><%= product.name %></p>
+        <p><%= product.description %></p>
+        <p><%= product.image_url %></p>
+        <p><%= product.color %></p>
+      
+      <td><%= link_to 'Show', product %></td>        
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </div>
+    <% end %>
   </div>
 </div>
 
+
+
+
+
 <br>
 
+<%= link_to 'New Product', new_product_path %>

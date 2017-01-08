@@ -8,9 +8,9 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
 
-  get 'products/products'
+  get 'products/product'
   
-  root 'landing_page#index'
+  root 'static_pages#landing_page'
 
   resources :orders, only: [:index, :show, :create, :destroy]
 

@@ -4,15 +4,17 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-2 col-md-4">
-      <% render @products %>
-        <p><%= product.name %></p>
-        <p><%= product.description %></p>
-        <p><%= product.image_url %></p>
-        <p><%= product.color %></p>      
-        <td><%= link_to 'Show', product %></td>        
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+     <% render @products %>
+        <div class="col-sm-2 col-md-4">
+          <% @products.each do |product| %>            
+          <p><%= product.name %></p>
+          <p><%= product.description %></p>
+          <p><%= product.image_url %></p>
+          <p><%= product.color %></p> 
+
+          <td><%= link_to 'Show', product %></td>        
+          <td><%= link_to 'Edit', edit_product_path(product) %></td>
+          <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
        <% end %>
       </div>
   </div>

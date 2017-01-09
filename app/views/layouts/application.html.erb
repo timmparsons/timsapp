@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
+    <title>Tim Parsons CF app</title>
    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <%= stylesheet_link_tag   'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -33,9 +33,9 @@
 				<ul class="nav navbar-nav navbar-right" id="navbar-right">
 				<nav class="nav nav-inline">
 				  <ul class="list-inline">
-				  	<li><%= link_to "Home", 'root_path' %></li>
-				    <li><%= link_to "About", '/static_pages/about' %></li>
-				    <li><%= link_to "Store", 'products#index' %></li>
+				  	<li><%= link_to "Home", root_path %></li>
+				   	<%= link_to "About", static_pages_about_path %></li>
+				    <li><%= link_to "Store",  products_path %></li>
 				    <li><%= link_to "Contact", '/static_pages/contact' %></li>
 				  </ul>
 				 </nav><!-- end of nav-->

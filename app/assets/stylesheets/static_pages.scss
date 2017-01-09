@@ -7,6 +7,10 @@ background-color: white;
 border: none;
 }
 
+button.navbar-toggle.collapsed {
+  background-color: black;
+  color: black;
+}
 
 ul .list-inline {
   margin-top: 0;
